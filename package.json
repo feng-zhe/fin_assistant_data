@@ -1,0 +1,23 @@
+{
+  "name": "fin_assistant_data",
+  "version": "0.0.1",
+  "description": "gets financial data and put it into database",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feng-zhe/fin_assistant_data.git"
+  },
+  "author": "feng-zhe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feng-zhe/fin_assistant_data/issues"
+  },
+  "homepage": "https://github.com/feng-zhe/fin_assistant_data#readme",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "mongodb": "^2.1.8"
+  }
+}
