@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/feng-zhe/fin_assistant_data#readme",
   "dependencies": {
-    "cheerio": "^0.20.0",
+    "csv": "^1.1.0",
     "mongodb": "^2.1.8"
   }
 }
