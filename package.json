@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "csv": "^1.1.0",
+    "jStat": "^1.5.3",
     "mongodb": "^2.1.8"
   }
 }
