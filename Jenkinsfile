@@ -7,4 +7,5 @@ node {
 
     stage "test"
     echo 'this is from test stage'
+    echo 'this is for polling test'
 }
