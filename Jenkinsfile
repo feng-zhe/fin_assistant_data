@@ -6,6 +6,5 @@ node {
     echo 'this is from build stage'
 
     stage "test"
-    echo 'this is from test stage'
-    echo 'this is for polling test'
+    echo 'give up gitlab'
 }
