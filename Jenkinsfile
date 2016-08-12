@@ -1,6 +1,6 @@
 node {
     stage "checkout"
-    checkout master
+    checkout scm
 
     stage "build"
     gitlabCommitStatus("build") {
