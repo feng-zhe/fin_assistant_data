@@ -1,7 +1,3 @@
-properties properties: [
-    [$class: 'GitLabConnectionProperty', gitLabConnection: 'mygitlab']
-]
-
 node {
     stage "checkout"
     checkout master
