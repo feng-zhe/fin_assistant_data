@@ -1,11 +1,10 @@
 node {
-    stage "checkout"
-    checkout scm
+    stage "smoke-test"
+    git url: git@dev.mathitfans.com:projects/fin_assistant_data.git
 
     stage "build"
-    echo 'this is from build stage'
+    sh 'echo this is from build stage'
 
-    stage "test"
-    echo 'git server online'
-    echo 'trying git hooks'
+    stage "pressure-test"
+    echo 'this if pressure test'
 }
