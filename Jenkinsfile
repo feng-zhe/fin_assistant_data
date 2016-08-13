@@ -6,5 +6,5 @@ node {
     echo 'this is from build stage'
 
     stage "test"
-    echo 'trying git server raw'
+    echo 'git server online'
 }
