@@ -1,6 +1,6 @@
 node {
     stage "smoke-test"
-    git url: "git@dev.mathitfans.com:projects/fin_assistant_data.git"
+    sh 'echo hello'
 
     stage "build"
     sh 'echo this is from build stage'
