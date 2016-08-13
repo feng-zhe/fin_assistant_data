@@ -1,4 +1,5 @@
 'use strict';
+// test
 
 const yahoo = require('./lib/stocks_yahoo');
 const center = require('./lib/center');
