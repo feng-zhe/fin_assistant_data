@@ -7,4 +7,5 @@ node {
 
     stage "test"
     echo 'git server online'
+    echo 'trying git hooks'
 }
