@@ -1,6 +1,6 @@
 node {
     stage "smoke-test"
-    sh 'echo hello'
+    sh 'echo hello world'
 
     stage "build"
     sh 'echo this is from build stage'
