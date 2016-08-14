@@ -1,5 +1,6 @@
 node {
     stage "prerequisites"
+    git url: "/home/git/projects/fin_assistant_data.git"
     def nodeHome = tool 'node-4.4.7'
     sh "rm -rf node_modules"
     sh "${nodeHome}/bin/npm install"
