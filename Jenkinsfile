@@ -1,9 +1,9 @@
 node {
     stage "prerequisites"
     def nodeHome = tool 'node-4.4.7'
+    sh "rm -rf ${nodeHome}/lib/node_modules"
+    sh "rm -rf node_modules"
     sh "${nodeHome}/bin/npm install"
-    sh "rf -rf ${nodeHome}/lib/node_modules"
-    sh "rf -rf node_modules"
 
     stage "smoke-test"
     sh "echo hello world"
