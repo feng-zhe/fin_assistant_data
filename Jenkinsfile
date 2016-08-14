@@ -8,4 +8,7 @@ node {
 
     stage "pressure-test"
     echo 'this if pressure test'
+
+    stage "deploy"
+    sh 'node app.js'
 }
