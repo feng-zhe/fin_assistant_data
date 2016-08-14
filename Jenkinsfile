@@ -1,7 +1,7 @@
 node {
     stage "prerequisites"
     def nodeHome = tool 'node-4.4.7'
-    echo "${nodeHome}"
+    sh '${nodeHome}/bin/npm install'
 
     stage "smoke-test"
     sh 'echo hello world'
@@ -14,5 +14,5 @@ node {
     echo 'this if pressure test'
 
     stage "deploy"
-    sh 'node app.js'
+    sh '${nodeHome}/bin/node app.js'
 }
