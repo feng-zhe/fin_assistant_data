@@ -1,7 +1,7 @@
 node {
     stage "prerequisites"
     def node = tool 'node-4.4.7'
-    sh 'echo ${node}'
+    echo '${node}'
     sh 'npm install'
 
     stage "smoke-test"
