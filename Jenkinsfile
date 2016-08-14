@@ -1,19 +1,19 @@
 node {
     stage "prerequisites"
     def nodeHome = tool 'node-4.4.7'
-    echo '${nodeHome}'
-    sh '${nodeHome}/bin/npm install'
+    echo "${nodeHome}"
+    sh "${nodeHome}/bin/npm install"
 
     stage "smoke-test"
-    sh 'echo hello world'
-    sh 'cat config.json'
+    sh "echo hello world"
+    sh "cat config.json"
 
     stage "build"
-    sh 'echo this is from build stage'
+    sh "echo this is from build stage"
 
     stage "pressure-test"
-    echo 'this if pressure test'
+    echo "this if pressure test"
 
     stage "deploy"
-    sh '${nodeHome}/bin/node app.js'
+    sh "${nodeHome}/bin/node app.js"
 }
