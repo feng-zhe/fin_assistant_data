@@ -1,6 +1,7 @@
 node {
     stage "prerequisites"
     def nodeHome = tool 'node-4.4.7'
+    echo "${nodeHome}"
 
     stage "smoke-test"
     sh 'echo hello world'
