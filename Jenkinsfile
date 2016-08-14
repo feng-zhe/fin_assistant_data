@@ -15,5 +15,6 @@ node {
     echo "this if pressure test"
 
     stage "deploy"
+    env.NODE_PATH = "./node_modules"
     sh "${nodeHome}/bin/node app.js"
 }
