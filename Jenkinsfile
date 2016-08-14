@@ -1,6 +1,7 @@
 node {
     stage "prerequisites"
     def nodeHome = tool 'node-4.4.7'
+    echo '${nodeHome}'
     sh '${nodeHome}/bin/npm install'
 
     stage "smoke-test"
