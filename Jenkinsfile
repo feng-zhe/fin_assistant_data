@@ -5,11 +5,11 @@ node {
     sh "${nodeHome}/bin/npm install"
 
     stage "build"
-    sh "TODO: this is the build stage"
+    echo "TODO: this is the build stage"
 
     stage "smoke-test"
     sh "${nodeHome}/bin/node app.js"
 
     stage "deploy"
-    sh "TODO: this is the deploy phase"
+    echo "TODO: this is the deploy phase"
 }
