@@ -3,8 +3,10 @@
 
 const yahoo = require('./lib/stocks_yahoo');
 const center = require('./lib/center');
+const fs = require('fs');
 
-const symbols = ['BIDU', 'BABA', 'JD', 'GOOG', 'AAPL', 'IBM'];
+const config = JSON.parse(fs.readFileSync('./config.json', 'utf8'));
+const symbols = config.symbols;
 
 // update then call center
 yahoo.update(symbols)
