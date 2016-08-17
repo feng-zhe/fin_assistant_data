@@ -9,6 +9,7 @@ node {
 
     stage "smoke-test"
     sh "${nodeHome}/bin/node update.js"
+    sh "${nodeHome}/bin/node post-update.js"
 
     stage "deploy"
     echo "TODO: this is the deploy phase"
