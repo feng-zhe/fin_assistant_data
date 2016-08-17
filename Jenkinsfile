@@ -8,7 +8,7 @@ node {
     echo "TODO: this is the build stage"
 
     stage "smoke-test"
-    sh "${nodeHome}/bin/node app.js"
+    sh "${nodeHome}/bin/node update.js"
 
     stage "deploy"
     echo "TODO: this is the deploy phase"
