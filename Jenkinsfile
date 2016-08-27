@@ -1,7 +1,7 @@
 node {
     stage "prerequisites"
     git url: "/home/git/projects/fin_assistant_data.git"
-    def nodeHome = tool 'node-lt'
+    def nodeHome = tool 'node-lts'
     sh "${nodeHome}/bin/npm install"
 
     stage "build"
